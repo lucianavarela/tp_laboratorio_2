@@ -1,0 +1,15 @@
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Varela.Luciana.2D.TP3.exe.config
+F:\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Varela.Luciana.2D.TP3.exe.config
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\obj\Debug\Varela.Luciana.2D.TP3.csprojResolveAssemblyReference.cache
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Varela.Luciana.2D.TP3.exe
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Varela.Luciana.2D.TP3.pdb
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Abstractas.dll
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Archivos.dll
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Clases Instanciables.dll
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Excepciones.dll
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Abstractas.pdb
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Archivos.pdb
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Clases Instanciables.pdb
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\bin\Debug\Excepciones.pdb
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\obj\Debug\Varela.Luciana.2D.TP3.exe
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Varela.Luciana.2D.TP3\obj\Debug\Varela.Luciana.2D.TP3.pdb
