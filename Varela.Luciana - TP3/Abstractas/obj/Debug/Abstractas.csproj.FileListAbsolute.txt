@@ -1,0 +1,7 @@
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Abstractas\bin\Debug\Abstractas.dll
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Abstractas\bin\Debug\Abstractas.pdb
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Abstractas\bin\Debug\Excepciones.dll
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Abstractas\bin\Debug\Excepciones.pdb
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Abstractas\obj\Debug\Abstractas.csprojResolveAssemblyReference.cache
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Abstractas\obj\Debug\Abstractas.dll
+C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Abstractas\obj\Debug\Abstractas.pdb

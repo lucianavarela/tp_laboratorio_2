@@ -1,4 +1,0 @@
-C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Excepciones\bin\Debug\Excepciones.dll
-C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Excepciones\bin\Debug\Excepciones.pdb
-C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Excepciones\obj\Debug\Excepciones.dll
-C:\Users\lvarela\Desktop\Varela.Luciana.2D.TP3\Excepciones\obj\Debug\Excepciones.pdb
