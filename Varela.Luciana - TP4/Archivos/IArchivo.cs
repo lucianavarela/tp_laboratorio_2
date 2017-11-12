@@ -8,7 +8,7 @@ namespace Archivos
 {
     public interface IArchivo<T>
     {
-        bool Guardar(List<T> datos);
+        bool Guardar(T datos);
         bool Leer(out List<T> datos);
     }
 }

@@ -17,18 +17,17 @@ namespace Archivos
             this._ruta = archivo;
         }
 
-        public bool Guardar(List<string> datos)
+        public bool Guardar(string datos)
         {
             try
             {
-                FileStream file = new FileStream(this._ruta, FileMode.Create);
-                BinaryFormatter file_serialized = new BinaryFormatter();
-                file_serialized.Serialize(file, datos);
-                file.Close();
+                StreamWriter writer = File.AppendText(this._ruta);
+                writer.WriteLine(datos);
+                writer.Close();
             }
             catch (Exception)
             {
-                throw new FileLoadException();
+                return false;
             }
 
             if (File.Exists(this._ruta))
@@ -43,15 +42,17 @@ namespace Archivos
 
         public bool Leer(out List<string> datos)
         {
+            datos = new List<string>();
             try
             {
                 if (File.Exists(this._ruta))
                 {
-                    BinaryFormatter file_deserialized;
-                    FileStream file = new FileStream(this._ruta, FileMode.Open);
-                    file_deserialized = new BinaryFormatter();
-                    datos = (List<string>)file_deserialized.Deserialize(file);
-                    file.Close();
+                    StreamReader reader = new StreamReader(this._ruta);
+                    while (!(reader.EndOfStream))
+                    {
+                        datos.Add((string)reader.ReadLine());
+                    }
+                    reader.Close();
                     return true;
                 }
                 else

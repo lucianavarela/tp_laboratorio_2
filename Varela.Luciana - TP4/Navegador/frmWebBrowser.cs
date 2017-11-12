@@ -15,14 +15,12 @@ namespace Navegador
 
     public partial class frmWebBrowser : Form
     {
-        List<string> _urls;
         private const string ESCRIBA_AQUI = "Escriba aquí...";
         Archivos.Texto archivos;
 
         public frmWebBrowser()
         {
             InitializeComponent();
-            this._urls = new List<string>();
         }
 
         private void frmWebBrowser_Load(object sender, EventArgs e)
@@ -33,10 +31,6 @@ namespace Navegador
             this.txtUrl.Text = frmWebBrowser.ESCRIBA_AQUI;
 
             archivos = new Archivos.Texto(frmHistorial.ARCHIVO_HISTORIAL);
-            if (!(archivos.Leer(out this._urls)))
-            {
-
-            }
         }
 
         #region "Escriba aquí..."
@@ -80,10 +74,6 @@ namespace Navegador
             else
             {
                 tspbProgreso.Value = progreso;
-                if (progreso == 100)
-                {
-                    tspbProgreso.Value = 0;
-                }
             }
         }
 
@@ -110,53 +100,47 @@ namespace Navegador
 
         private void btnIr_Click(object sender, EventArgs e)
         {
-            bool add_to_history = true;
-            string link = txtUrl.Text;
-            if (!(link.Contains("http")))
+            if (txtUrl.Text != "")
             {
-                link = "https://" + link;
-            }
-            if ((this._urls).Count > 0)
-            {
-                foreach (string historyURL in this._urls)
+                string link = txtUrl.Text;
+                if (!(link.Contains("http")))
                 {
-                    if (historyURL == link)
-                    {
-                        add_to_history = false;
-                        break;
-                    }
+                    link = "https://" + link;
+                }
+                txtUrl.Text = link;
+
+                try
+                {
+                    Uri url = new Uri(link);
+                    archivos.Guardar(link);
+                    Descargador busqueda = new Descargador(url);
+                    busqueda.EventoProgress += ProgresoDescarga;
+                    busqueda.EventoComplete += FinDescarga;
+                    Thread hiloDescarga = new Thread(busqueda.IniciarDescarga);
+                    hiloDescarga.Start();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("404 - File not found :(");
                 }
             }
-            if (add_to_history)
-            {
-                this._urls.Add(link);
-            }
-            
-            Uri url = new Uri(link);
-            Descargador busqueda = new Descargador(url);
-
-            busqueda.EventoProgress += ProgresoDescarga;
-            busqueda.EventoComplete += FinDescarga;
-            Thread hiloDescarga = new Thread(busqueda.IniciarDescarga);
-            hiloDescarga.Start();
         }
-        
+
         private void mostrarTodoElHistorialToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmHistorial formHistorial = new frmHistorial(this._urls);
+            frmHistorial formHistorial = new frmHistorial();
             formHistorial.EventoURLSeleccionada += URLdeHistorial;
-            formHistorial.Show();
+            formHistorial.ShowDialog();
+            if (formHistorial.DialogResult == System.Windows.Forms.DialogResult.OK)
+            {
+                formHistorial.Close();
+            }
         }
 
-        private void URLdeHistorial (string url)
+        private void URLdeHistorial(string url)
         {
             txtUrl.Text = url;
             btnIr.PerformClick();
-        }
-
-        private void frmWebBrowser_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            archivos.Guardar(this._urls);
         }
 
         private void txtUrl_KeyPress(object sender, KeyPressEventArgs e)

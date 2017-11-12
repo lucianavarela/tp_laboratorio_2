@@ -135,7 +135,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UTN Web Browser";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmWebBrowser_FormClosing);
             this.Load += new System.EventHandler(this.frmWebBrowser_Load);
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();

@@ -15,21 +15,24 @@ namespace Navegador
     {
         List<string> _urls;
         public const string ARCHIVO_HISTORIAL = "historico.dat";
+        Archivos.Texto archivos = new Archivos.Texto(ARCHIVO_HISTORIAL);
 
-        public frmHistorial(List<string> urls)
+        public frmHistorial()
         {
             InitializeComponent();
-            this._urls = urls;
         }
 
         private void frmHistorial_Load(object sender, EventArgs e)
         {
             lstHistorial.Items.Clear();
-            if (this._urls.Count > 0)
+            if (archivos.Leer(out _urls))
             {
-                foreach (string url in this._urls)
+                if (this._urls.Count > 0)
                 {
-                    lstHistorial.Items.Add(url);
+                    foreach (string url in this._urls)
+                    {
+                        lstHistorial.Items.Add(url);
+                    }
                 }
             }
         }
@@ -38,9 +41,16 @@ namespace Navegador
         {
             string url = (string)lstHistorial.SelectedItem;
             EventoURLSeleccionada.Invoke(url);
-            this.Hide();
+            this.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Close();
         }
 
         public event ManejoURL EventoURLSeleccionada;
+
+        private void frmHistorial_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Hide();
+        }
     }
 }
