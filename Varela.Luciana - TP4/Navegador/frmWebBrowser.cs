@@ -148,6 +148,7 @@ namespace Navegador
             if (e.KeyChar == (char)13)
             {
                 btnIr.PerformClick();
+                e.Handled = true;
             }
         }
 
