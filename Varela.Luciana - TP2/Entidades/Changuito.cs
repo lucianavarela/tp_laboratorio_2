@@ -59,20 +59,21 @@ namespace Entidades_2017
             sb.AppendLine("");
             foreach (Producto v in c._productos)
             {
-                switch (tipo)
+                if (tipo.Equals(ETipo.Dulce) && v is Dulce)
                 {
-                    case ETipo.Snacks:
-                        sb.AppendLine(v.Mostrar());
-                        break;
-                    case ETipo.Dulce:
-                        sb.AppendLine(v.Mostrar());
-                        break;
-                    case ETipo.Leche:
-                        sb.AppendLine(v.Mostrar());
-                        break;
-                    default:
-                        sb.AppendLine(v.Mostrar());
-                        break;
+                    sb.AppendLine(v.Mostrar());
+                }
+                else if (tipo.Equals(ETipo.Leche) && v is Leche)
+                {
+                    sb.AppendLine(v.Mostrar());
+                }
+                else if (tipo.Equals(ETipo.Snacks) && v is Snacks)
+                {
+                    sb.AppendLine(v.Mostrar());
+                }
+                else if (tipo.Equals(ETipo.Todos)) 
+                {
+                    sb.AppendLine(v.Mostrar());
                 }
             }
 

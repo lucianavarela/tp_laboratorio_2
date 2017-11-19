@@ -13,3 +13,13 @@ C:\Users\lvarela\Downloads\TP-02\Entidades\obj\Debug\Entidades.pdb
 C:\Users\lvarela\Downloads\TP-02\Entidades\bin\Debug\Entidades.dll
 C:\Users\lvarela\Downloads\TP-02\Entidades\bin\Debug\Entidades.pdb
 C:\Users\lvarela\Downloads\TP-02\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Downloads\tp_laboratorio_2-master\Varela.Luciana - TP2\Entidades\bin\Debug\Entidades.dll
+C:\Users\alumno\Downloads\tp_laboratorio_2-master\Varela.Luciana - TP2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\alumno\Downloads\tp_laboratorio_2-master\Varela.Luciana - TP2\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Downloads\tp_laboratorio_2-master\Varela.Luciana - TP2\Entidades\obj\Debug\Entidades.dll
+C:\Users\alumno\Downloads\tp_laboratorio_2-master\Varela.Luciana - TP2\Entidades\obj\Debug\Entidades.pdb
+E:\Programacion II\2da Parte\Varela.Luciana - TP2\Entidades\bin\Debug\Entidades.dll
+E:\Programacion II\2da Parte\Varela.Luciana - TP2\Entidades\bin\Debug\Entidades.pdb
+E:\Programacion II\2da Parte\Varela.Luciana - TP2\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+E:\Programacion II\2da Parte\Varela.Luciana - TP2\Entidades\obj\Debug\Entidades.dll
+E:\Programacion II\2da Parte\Varela.Luciana - TP2\Entidades\obj\Debug\Entidades.pdb
