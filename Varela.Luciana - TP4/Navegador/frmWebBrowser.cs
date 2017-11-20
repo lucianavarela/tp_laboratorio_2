@@ -105,7 +105,7 @@ namespace Navegador
                 string link = txtUrl.Text;
                 if (!(link.Contains("http")))
                 {
-                    link = "https://" + link;
+                    link = "http://" + link;
                 }
                 txtUrl.Text = link;
 
